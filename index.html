@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distrito de Cerro AZul</title>
+
+  <!-- Fuente similar a Forte -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Muthiara Demo', cursive;
+      color: #000;
+    }
+
+    /* ================================
+       Sección principal
+    ================================= */
+    .hero {
+      height: 100vh;
+      background: url(https://i0.wp.com/portaldeturismo.pe/wp-content/uploads/2022/06/Disen%CC%83o-sin-ti%CC%81tulo-18.png?fit=640%2C425&ssl=1) no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      margin-bottom: 60px;
+      width: 100%;
+      background-color: rgba(245, 246, 234, 0.5);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .overlay h1 {
+      font-size: 5em;
+      color: #000;
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+    }
+
+    .escudo {
+      position: absolute;
+      top: 55%;
+      right: 40px;
+      transform: translateY(70%);
+      width: 150px;
+      height: auto;
+      filter: drop-shadow(0 0 12px rgb(251, 254, 23));
+      transition: transform 0.3s ease;
+    }
+
+    .escudo:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 20px rgba(246, 200, 73, 0.747));
+    }
+
+    .btn {
+      display: inline-block;
+      font-size: 2em;
+      color: white;
+      width: 160px;
+      padding: 12px 15px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      background-color: #c40000;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: red;
+    }
+
+    /* ================================
+       Sección de información
+    ================================= */
+    .info {
+      height: 100vh;
+      background-color: #4bf9ff; /* Fondo crema suave */
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    iframe {
+      width: 80%;
+      height: 650px;
+      border: 3px solid #333;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .volver {
+      display: inline-block;
+      font-size: 1.5em;
+      color: white;
+      background-color: #0078D7;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .volver:hover {
+      background-color: #005fa3;
+    }
+
+    @media (max-width: 768px) {
+      .overlay h1 {
+        font-size: 2.5em;
+      }
+
+      .escudo {
+        width: 80px;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      iframe {
+        width: 95%;
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sección Principal -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Distrito de Cerro Azul</h1>
+      <a href="#info" class="btn">Ver más</a>
+    </div>
+    <img src="CerroAzul.png" alt="Escudo de Cerro Azul" class="escudo">
+  </section>
+
+  <!-- Sección de Información -->
+  <section class="info" id="info">
+    <iframe
+      src="https://www.google.com/maps?q=Cerro Azul,+Cañete,+Lima,+Perú&output=embed"
+      loading="lazy">
+    </iframe>
+
+    <!-- Botón de regreso -->
+    <a href="https://xio356.github.io/pagina0/" class="volver">← Volver al inicio</a>
+  </section>
+
+</body>
+</html>
+
+
